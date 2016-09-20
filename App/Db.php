@@ -9,6 +9,6 @@ class Db {
     
     public function __construct()
     {
-        echo 'Hello World';
+        $dbh = new \PDO('mysql:host=127.0.0.1; dbname=profit2php', 'root', '');
     }
 }

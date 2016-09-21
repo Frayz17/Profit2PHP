@@ -6,9 +6,17 @@ namespace App;
 
 class Db {
     
+    protected $dbh;
     
     public function __construct()
     {
-        $dbh = new \PDO('mysql:host=127.0.0.1; dbname=profit2php', 'root', '');
+        $this->dbh = new \PDO('mysql:host=127.0.0.1; dbname=profit2php', 'root', '');
+    }
+    
+    public function execute($sql)
+    {
+        $sth = $this->dbh->prepare($sql);
+        $res = $sth->execute();
+        return $res;
     }
 }

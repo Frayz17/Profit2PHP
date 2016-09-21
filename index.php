@@ -12,6 +12,7 @@
     <body>
         <?php
             $db = new \App\Db();
+            
         ?>
     </body>
 </html>

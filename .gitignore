@@ -1,0 +1,19 @@
+# npm debugging logs
+*.log
+
+# project dependencies
+node_modules
+
+# OSX folder attributes
+.DS_Store
+
+# temporary files
+*.tmp
+*~
+
+# distribution folders
+dist
+public\dist
+
+# NetBeans folder
+# nbproject
